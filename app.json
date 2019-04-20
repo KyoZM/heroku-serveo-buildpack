@@ -1,0 +1,10 @@
+{
+  "name": "Serveo",
+  "description": "Serveo",
+  "repository": "https://github.com/KyoZM/heroku-serveo-buildpack",
+  "buildpacks": [
+    {
+      "url": "heroku-community/inline"
+    }
+  ]
+}
