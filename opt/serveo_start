@@ -5,7 +5,7 @@ port=${1:-${PORT:-8080}}
 echo "Starting: serveo ${port}"
 echo "[now] $(which screen)"
 ssh-keygen -t rsa -N "" -f ./id_rsa
-eval "screen -S serveo -dm ./serveo -private_key_path ./id_rsa -port=${port} -http_port=6666 -https_port=4433 -domain=tunnelssh.herokuapp.com"
+eval "screen -S serveo -dm ./serveo -private_key_path ./id_rsa -port=9999 -http_port=6666 -https_port=${port} -domain=tunnelssh.herokuapp.com"
 main_pid=$!
 
 while true; do sleep 10; done
