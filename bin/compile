@@ -64,4 +64,4 @@ mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/serveo_start ]   && cp $OPT_DIR/serveo_start $BUILD_DIR/bin
 
 chmod +x $BUILD_DIR/bin/serveo_start
-chmod +x $BUILD_DIR/bin/serveo
+chmod +x $BUILD_DIR/serveo
