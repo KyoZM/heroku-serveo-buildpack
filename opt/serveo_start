@@ -5,5 +5,5 @@ port=${1:-${PORT:-8080}}
 echo "Starting: serveo ${port}"
 echo "[now] $(which screen)"
 ssh-keygen -t rsa -N "" -f ./id_rsa
-sh serveo -private_key_path ./id_rsa -port=8888 -http_port=${port} -https_port=9999
+sh serveo -private_key_path ./id_rsa -port=8888 -http_port=${port} -https_port=9999 -domain="${HEROKU_DOMAIN}"
 main_pid=$!
