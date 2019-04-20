@@ -56,6 +56,7 @@ done
 
 echo -n "-----> Installing serveo... "
 curl --silent -o serveo -L "https://storage.googleapis.com/serveo/download/2018-05-08/serveo-linux-amd64" | indent
+mv serveo $BUILD_DIR/bin
 echo "done"
 
 mkdir -p $BUILD_DIR/bin
